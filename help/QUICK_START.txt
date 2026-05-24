@@ -1,0 +1,66 @@
+# 🚀 QUICK START - Chạy Web Test Model Trong 30 Giây
+
+## ⚡ 3 Bước Nhanh
+
+### **Bước 1: Mở PowerShell**
+- Nhấn `Win + R`
+- Gõ: `powershell`
+- Navigate đến folder project
+
+### **Bước 2: Chạy Lệnh**
+```powershell
+.\.venv\Scripts\Activate.ps1
+streamlit run app.py
+```
+
+### **Bước 3: Chọn & Test**
+- ✅ Trình duyệt tự động mở
+- ✅ Chọn User ID
+- ✅ Chọn Model
+- ✅ Xem gợi ý phim
+
+---
+
+## 🎯 Gợi Ý Lần Đầu
+
+1. **User**: Chọn **User 414** (hoạt động nhiều nhất)
+2. **Model**: Chọn **ItemCF** (tốt nhất)
+3. **K**: **10** phim
+4. **Threshold**: **2.5** sao
+
+---
+
+## 📊 So Sánh 4 Model
+
+| Model  | RMSE | MAE | Dùng cho |
+|--------|------|-----|----------|
+| UserCF | 1.05 | 0.83 | Tìm user tương tự |
+| **ItemCF** ⭐ | **0.95** | **0.71** | **Dự đoán rating (TỐT NHẤT)** |
+| SVD | 3.37 | 3.18 | Gợi ý phim mới |
+| Content-Based | 1.72 | 1.32 | Gợi ý theo nội dung, cold-start |
+
+→ **ItemCF = TỐT NHẤT cho dự đoán rating**
+→ **SVD = TỐT NHẤT cho ranking/gợi ý**
+→ **Content-Based = TỐT NHẤT cho cold-start và gợi ý dựa nội dung**
+
+---
+
+## 🛑 Dừng App
+
+Nhấn `Ctrl + C` trong PowerShell
+
+---
+
+## ❓ Lỗi?
+
+```
+# Cài lại Streamlit
+pip install streamlit
+
+# Chạy lại
+streamlit run app.py
+```
+
+---
+
+**Vậy là xong! 🎬 Bắt đầu test ngay nào!**
